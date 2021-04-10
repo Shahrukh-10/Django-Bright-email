@@ -10,18 +10,18 @@ def index(request):
         name = request.POST['name']
         email = request.POST['email']
         query = request.POST['query']
-        info = Userinfo(name=Trim(name),email=Trim(email),query=Trim(query))
+        info = Userinfo(name=name,email=email,query=query)
         
         res = send_mail(
-            subject = 'Your query has been submitted',
-            message = 'thanks for your feedback',
+            subject = f'New Query from {email}',
+            message = f'''Name: {name}\nQuery: {query}''',
             from_email = 'Brightservicecentre1@gmail.com',
-            recipient_list = [email],
+            recipient_list = ['test.testing.stark@gmail.com'],
             fail_silently=True,
         )  
-        print(name,email,query,res)
         if res==1:
             messages.error(request,'Response sent successfully.')
+            info.save()
             return render(request,'index.html')
         else:
             messages.error(request,'Some error occurred')
