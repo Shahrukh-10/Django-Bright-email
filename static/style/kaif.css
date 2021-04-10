@@ -1,0 +1,172 @@
+*{margin: 0; padding: 0; box-sizing: border-box;
+ font-family: 'Acme';font-size: 22px;}
+
+
+.navbar{
+	background: #231708;
+}
+
+.nav-item a {
+	color: white; 
+		border-bottom: 1px solid darkred;
+		margin: 15px;
+		
+}
+
+
+.navbar-brand{
+	color: white;
+}
+
+
+.carousel-item{
+	width: 100%;
+	height: 100vh;
+	}
+
+
+.two p{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 1px;
+	color: black;
+}
+
+.twoo{
+    background-color: white;
+}
+
+
+.card img{
+  
+    width: 100px;
+    height: 100px;
+   margin-left: 37%;
+   margin-top: 10px;
+
+}
+
+.card{
+	background: navy;
+	color: white;
+    transition: 0.3s ease;
+    border-bottom-left-radius: 50px; 
+}
+
+.card:hover{
+	transform: translate(-20px);
+ box-shadow: 0 0 20px 0 rgba(0,0,0,0.3); 
+}
+
+
+
+.btn-a{
+	background:#231708; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 4px;
+  cursor: pointer;
+border-radius: 20%;
+padding: 14px 40px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 22px;
+}
+
+.pot p{
+	
+  margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 1px;
+	color: black;
+}
+
+.btn-b{
+	background:white; 
+  border: none;
+  color:#231708 ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 4px;
+  cursor: pointer;
+border-radius: 20%;
+padding: 14px 40px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.btn-b:hover{
+	background:white; 
+  border: none;
+  color: royalblue;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 4px;
+  cursor: pointer;
+border-radius: 20%;
+padding: 14px 40px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.end{
+	padding-top: 90px;
+	background: #231708;
+	color: white;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

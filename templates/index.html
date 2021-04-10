@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Smart work MK</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/kaif.css' %}">
+</head>
+
+<body>
+</div>
+    {% for message in messages %}
+    <div class="alert alert-{{messages.tags}} alert-dismissible fade show" role="alert">
+  <strong>Message :</strong> {{message}}{{messages.tags}}
+  <button type="button btn-lg" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+    {% endfor %}
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">BRIGHT S</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <section class="twoo pt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="w3-content w3-section" style="max-width:500px">
+                        <img class="mySlides" src="{% static 'media/lcdtv.png' %}" style="width:100%">
+                        <img class="mySlides" src="{% static 'media/acc.png' %}" style="width:100%">
+                        <img class="mySlides" src="{% static 'media/fridge.png' %}" style="width:100%">
+                        <img class="mySlides" src="{% static 'media/washc.png' %}" style="width:100%">
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h3 class="text-center">WELCOME TO BRIGHT SERVICE CENTRE</h3>
+                    <p class="two text-center">You are looking for help with LED TV repair, then you've come to the
+                        right place. At wise LED TV repair, our highly-experienced LED TV repair pros have been working
+                        with LED TV repair services for a number of years, providing amazing results for a very
+                        affordable price. We provide services for all kinds of LED TV repair needs, both big and small.
+                        In fact, our LED TV repair pros can help with any type of LED TV repair you could possibly need.
+                        When you need professional services in a very timely fashion, working with a LED TV repair
+                        company is always the way to go. Even though it may seem like a very simple job, professional
+                        service guarantees you'll be happy with our superior results.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="three mt-5 text-center mx-auto w-50">
+        <h1 class=" ser text-center mb-3">Form</h1>
+        <div class="cat">
+            <form action='.' method='POST'>
+            {% csrf_token %}
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name='name' id="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" name='email' id="email" required placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+                <label for="query">Enter your query !</label>
+                <textarea class="form-control"  required placeholder="Enter your query" id="query" name='query' rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-a">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="kat mt-5">
+        <h1 class=" ser text-center mb-5">Our Services</h1>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-12 mb-5">
+                    <div class="card justify-content-center">
+                        <img src="{% static 'media/lcdtv.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">LCD / LED Repair Service</h5>
+                            <p class="card-text">Service your television with passion. We deliver perfection integrated
+                                TV Repair home service to our customers.</p>
+                            <a href="#" class="btn-b">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 mb-5">
+                    <div class="card justify-content-center">
+                        <img src="{% static 'media/acc.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Air Conditioner</h5>
+                            <p class="card-text">We offer a large collection of Air Conditioning Templates that promotes
+                                high quality designs with good content organization and product presentation.</p>
+                            <a href="#" class="btn-b">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 mb-5">
+                    <div class="card justify-content-center">
+                        <img src="{% static 'media/fridge.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Refrigerator</h5>
+                            <p class="card-text">Your refrigerator is an excellent home appliance that keeps food items
+                                fresh and makes them imperishable. But sometimes your fridge can fail to absorb moisture
+                                or the compressor might</p>
+                            <a href="#" class="btn-b">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 mb-5">
+                    <div class="card justify-content-center">
+                        <img src="{% static 'media/washc.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Washing Machine</h5>
+                            <p class="card-text">A washing machine is a reliable home appliance and serves as a blessing
+                                in disguise as it washes and cleans your clothes. It releases you from the struggle of
+                                washing your clothes on your own.</p>
+                            <a href="#" class="btn-b">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="end mt-10 text-center">
+
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-lg-4 col-md-4 col-12 mb-5">
+                    <h1>About Us</h1>
+                    <p>We care services for best Home administration all together again Home Cares appliances. We have
+                        less group of profoundly encountered technicolor.</p>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 mb-5">
+
+                    <h1>Get In Touch</h1>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 mb-5">
+                    <h1>CONTACT US</h1>
+                    <h1>Call 6393333569</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
